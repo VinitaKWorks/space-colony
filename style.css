@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +19,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -48,18 +51,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background-color: #ff5100;
-    color: #f0f0f0;
-    border: 2px groove #794730;
+    border: 3px groove #794730;
     font-weight: bold;
     text-align: center;
 }
 
 dialog {
+    top: -50%;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #ffeedd;
     border: 1px solid black;
-    top: -50%;
 }
 
 dialog h2 {
@@ -99,7 +101,7 @@ svg {
 }
 
 .modal-content {
-    background-color: #ffffff;
+    background-color: #ffeecc;
     margin: 20% auto;
     padding: 20px;
     border: 1px solid #2c2c2c;
