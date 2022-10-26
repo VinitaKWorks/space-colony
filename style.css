@@ -42,6 +42,38 @@ body {
     z-index: 1;
 }
 
+.info {
+    cursor: pointer;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #ff5100;
+    color: #f0f0f0;
+    border: 2px groove #794730;
+    font-weight: bold;
+    text-align: center;
+}
+
+dialog {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    top: -50%;
+}
+
+dialog h2 {
+    text-align: center;
+}
+
+dialog p {
+    text-align: justify;
+}
+
+.close-dialog {
+    cursor: pointer;
+}
+
 
 svg {
     width: auto;
@@ -67,11 +99,23 @@ svg {
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
+    background-color: #ffffff;
+    margin: 20% auto;
     padding: 20px;
-    border: 1px solid #888888;
+    border: 1px solid #2c2c2c;
     width: 80%;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.modal-content p {
+    text-align: justify;
+}
+
+.close-button {
+    cursor: pointer;
 }
 
 
@@ -90,6 +134,14 @@ svg {
     color: white;
   }
 
+
+@media only screen and (max-width: 400px) {
+    .info{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 
 
 
