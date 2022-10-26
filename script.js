@@ -27,41 +27,41 @@ slider.addEventListener('mousemove', (e) => {
 });
 
 
-var dialog = document.querySelector(".dialog");
-var dialogOpen = document.querySelector(".info");
-var dialogClose = document.querySelector(".close-dialog");
+var dialog = document.querySelector('.dialog');
+var dialogOpen = document.querySelector('.info');
+var dialogClose = document.querySelector('.close-dialog');
 
-dialogOpen.addEventListener("click", function() {
+dialogOpen.addEventListener('click', function() {
   dialog.showModal();
 });
 
-dialogClose.addEventListener("click", function() {
+dialogClose.addEventListener('click', function() {
   dialog.close();
 });
 
 
-var modalBtns = document.querySelectorAll(".modal-opener");
+var modalBtns = document.querySelectorAll('.modal-opener');
     modalBtns.forEach(function(btn){
     btn.onclick = function() {
       var modal = btn.getAttribute('data-modal');
       document.getElementById(modal).style.display = "block";
-      window.addEventListener("scroll", scrollDisable);
+      window.addEventListener('scroll', scrollDisable);
     }
   });
 
-  var closeBtns = document.querySelectorAll(".close-button");
+  var closeBtns = document.querySelectorAll('.close-button');
   closeBtns.forEach(function(btn){
     btn.onclick = function() {
       var modal = btn.closest('.modal');
-      modal.style.display = "none";
-      window.removeEventListener("scroll", scrollDisable);
+      modal.style.display = 'none';
+      window.removeEventListener('scroll', scrollDisable);
     }
   });
 
   window.onclick = function(event) {
-    if (event.target.className === "modal") {
-      event.target.style.display = "none";
-      window.removeEventListener("scroll", scrollDisable);
+    if (event.target.className === 'modal') {
+      event.target.style.display = 'none';
+      window.removeEventListener('scroll', scrollDisable);
     }
   }
 
