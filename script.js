@@ -27,6 +27,19 @@ slider.addEventListener('mousemove', (e) => {
 });
 
 
+var dialog = document.querySelector(".dialog");
+var dialogOpen = document.querySelector(".info");
+var dialogClose = document.querySelector(".close-dialog");
+
+dialogOpen.addEventListener("click", function() {
+  dialog.showModal();
+});
+
+dialogClose.addEventListener("click", function() {
+  dialog.close();
+});
+
+
 var modalBtns = document.querySelectorAll(".modal-opener");
     modalBtns.forEach(function(btn){
     btn.onclick = function() {
