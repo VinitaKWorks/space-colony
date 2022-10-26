@@ -132,10 +132,13 @@ svg {
     color: white;
   }
   
-  .footer a {
-    color: white;
-  }
+.footer a {
+color: white;
+}
 
+.footer a:hover {
+text-decoration: underline;
+}
 
 @media only screen and (max-width: 400px) {
     .info{
